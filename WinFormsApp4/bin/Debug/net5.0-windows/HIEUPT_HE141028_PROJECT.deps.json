@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "HIEUPT_HE141028_PROJECT/1.0.0": {
+        "runtime": {
+          "HIEUPT_HE141028_PROJECT.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "HIEUPT_HE141028_PROJECT/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
