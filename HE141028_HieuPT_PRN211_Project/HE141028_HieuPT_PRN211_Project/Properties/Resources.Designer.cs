@@ -69,5 +69,35 @@ namespace HE141028_HieuPT_PRN211_Project.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Screenshot_2021_12_07_173412 {
+            get {
+                object obj = ResourceManager.GetObject("Screenshot 2021-12-07 173412", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Screenshot_2021_12_07_173643 {
+            get {
+                object obj = ResourceManager.GetObject("Screenshot 2021-12-07 173643", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Screenshot_2021_12_07_174832 {
+            get {
+                object obj = ResourceManager.GetObject("Screenshot 2021-12-07 174832", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }

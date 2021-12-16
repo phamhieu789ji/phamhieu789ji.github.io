@@ -16,3 +16,4 @@ C:\Users\hieuc\source\repos\HE141028_HieuPT_PRN211_Project\HE141028_HieuPT_PRN21
 C:\Users\hieuc\source\repos\HE141028_HieuPT_PRN211_Project\HE141028_HieuPT_PRN211_Project\obj\Debug\net6.0-windows\HE141028_HieuPT_PRN211_Project.pdb
 C:\Users\hieuc\source\repos\HE141028_HieuPT_PRN211_Project\HE141028_HieuPT_PRN211_Project\obj\Debug\net6.0-windows\HE141028_HieuPT_PRN211_Project.genruntimeconfig.cache
 C:\Users\hieuc\source\repos\HE141028_HieuPT_PRN211_Project\HE141028_HieuPT_PRN211_Project\obj\Debug\net6.0-windows\HE141028_HieuPT_PRN211_Project.Properties.Resources.resources
+C:\Users\hieuc\source\repos\HE141028_HieuPT_PRN211_Project\HE141028_HieuPT_PRN211_Project\obj\Debug\net6.0-windows\HE141028_HieuPT_PRN211_Project.Form2.resources

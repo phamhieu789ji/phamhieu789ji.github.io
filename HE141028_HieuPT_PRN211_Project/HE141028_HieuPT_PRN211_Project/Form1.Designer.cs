@@ -41,19 +41,32 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.label16 = new System.Windows.Forms.Label();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.money = new System.Windows.Forms.Label();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.label17 = new System.Windows.Forms.Label();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
-            this.button1 = new System.Windows.Forms.Button();
             this.label18 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
+            this.checkedListBox1 = new System.Windows.Forms.CheckedListBox();
+            this.Addtocart = new System.Windows.Forms.Button();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.roommoney = new System.Windows.Forms.Label();
+            this.room = new System.Windows.Forms.Label();
+            this.roomtype = new System.Windows.Forms.ComboBox();
+            this.anothermoney = new System.Windows.Forms.TextBox();
             this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel6 = new System.Windows.Forms.TableLayoutPanel();
             this.label10 = new System.Windows.Forms.Label();
-            this.listBox6 = new System.Windows.Forms.ListBox();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.label24 = new System.Windows.Forms.Label();
+            this.label23 = new System.Windows.Forms.Label();
+            this.label22 = new System.Windows.Forms.Label();
+            this.label21 = new System.Windows.Forms.Label();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.submit = new System.Windows.Forms.Button();
             this.label9 = new System.Windows.Forms.Label();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.label11 = new System.Windows.Forms.Label();
@@ -65,13 +78,22 @@
             this.linkLabel4 = new System.Windows.Forms.LinkLabel();
             this.label15 = new System.Windows.Forms.Label();
             this.linkLabel5 = new System.Windows.Forms.LinkLabel();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.agianmoney = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
+            this.acc = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel1.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
+            this.panel3.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
             this.tableLayoutPanel4.SuspendLayout();
+            this.panel4.SuspendLayout();
             this.tableLayoutPanel6.SuspendLayout();
+            this.panel2.SuspendLayout();
+            this.panel5.SuspendLayout();
+            this.panel6.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -119,6 +141,8 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.panel1.Controls.Add(this.acc);
+            this.panel1.Controls.Add(this.label16);
             this.panel1.Controls.Add(this.label8);
             this.panel1.Controls.Add(this.label7);
             this.panel1.Controls.Add(this.label6);
@@ -151,6 +175,7 @@
             this.label7.Size = new System.Drawing.Size(37, 15);
             this.label7.TabIndex = 4;
             this.label7.Text = "Login";
+            this.label7.Click += new System.EventHandler(this.label7_Click);
             // 
             // label6
             // 
@@ -161,9 +186,9 @@
             this.label6.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label6.Location = new System.Drawing.Point(986, 3);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(139, 15);
+            this.label6.Size = new System.Drawing.Size(59, 15);
             this.label6.TabIndex = 3;
-            this.label6.Text = "CAMPUS: FPTU-Hòa Lạc";
+            this.label6.Text = "CAMPUS:";
             // 
             // label5
             // 
@@ -203,7 +228,7 @@
             this.tableLayoutPanel1.ColumnCount = 2;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.27616F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 66.72384F));
-            this.tableLayoutPanel1.Controls.Add(this.label16, 1, 0);
+            this.tableLayoutPanel1.Controls.Add(this.panel3, 1, 0);
             this.tableLayoutPanel1.Location = new System.Drawing.Point(22, 141);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 1;
@@ -211,14 +236,24 @@
             this.tableLayoutPanel1.Size = new System.Drawing.Size(584, 34);
             this.tableLayoutPanel1.TabIndex = 5;
             // 
-            // label16
+            // panel3
             // 
-            this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(198, 1);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(192, 15);
-            this.label16.TabIndex = 0;
-            this.label16.Text = "Account balance (Số dư tài khoản):";
+            this.panel3.Controls.Add(this.money);
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel3.Location = new System.Drawing.Point(198, 4);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(382, 26);
+            this.panel3.TabIndex = 0;
+            // 
+            // money
+            // 
+            this.money.AutoSize = true;
+            this.money.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.money.Location = new System.Drawing.Point(3, 5);
+            this.money.Name = "money";
+            this.money.Size = new System.Drawing.Size(225, 17);
+            this.money.TabIndex = 0;
+            this.money.Text = "Account balance (Số dư tài khoản):";
             // 
             // tableLayoutPanel2
             // 
@@ -261,10 +296,13 @@
             this.tableLayoutPanel4.ColumnCount = 2;
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 29.18216F));
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 388F));
-            this.tableLayoutPanel4.Controls.Add(this.button1, 1, 2);
             this.tableLayoutPanel4.Controls.Add(this.label18, 0, 0);
             this.tableLayoutPanel4.Controls.Add(this.label19, 0, 1);
             this.tableLayoutPanel4.Controls.Add(this.label20, 0, 2);
+            this.tableLayoutPanel4.Controls.Add(this.Addtocart, 1, 3);
+            this.tableLayoutPanel4.Controls.Add(this.panel4, 1, 1);
+            this.tableLayoutPanel4.Controls.Add(this.anothermoney, 1, 2);
+            this.tableLayoutPanel4.Controls.Add(this.panel6, 1, 0);
             this.tableLayoutPanel4.Location = new System.Drawing.Point(22, 209);
             this.tableLayoutPanel4.Name = "tableLayoutPanel4";
             this.tableLayoutPanel4.RowCount = 4;
@@ -274,19 +312,6 @@
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 47F));
             this.tableLayoutPanel4.Size = new System.Drawing.Size(584, 365);
             this.tableLayoutPanel4.TabIndex = 7;
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button1.Location = new System.Drawing.Point(198, 282);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(120, 31);
-            this.button1.TabIndex = 3;
-            this.button1.Text = "Add To Cart";
-            this.button1.UseVisualStyleBackColor = false;
             // 
             // label18
             // 
@@ -315,6 +340,82 @@
             this.label20.TabIndex = 6;
             this.label20.Text = "Tiền khác";
             // 
+            // checkedListBox1
+            // 
+            this.checkedListBox1.FormattingEnabled = true;
+            this.checkedListBox1.Location = new System.Drawing.Point(3, 3);
+            this.checkedListBox1.Name = "checkedListBox1";
+            this.checkedListBox1.Size = new System.Drawing.Size(120, 94);
+            this.checkedListBox1.TabIndex = 7;
+            this.checkedListBox1.SelectedIndexChanged += new System.EventHandler(this.checkedListBox1_SelectedIndexChanged);
+            // 
+            // Addtocart
+            // 
+            this.Addtocart.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.Addtocart.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Addtocart.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.Addtocart.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.Addtocart.Location = new System.Drawing.Point(198, 320);
+            this.Addtocart.Name = "Addtocart";
+            this.Addtocart.Size = new System.Drawing.Size(120, 31);
+            this.Addtocart.TabIndex = 3;
+            this.Addtocart.Text = "Add To Cart";
+            this.Addtocart.UseVisualStyleBackColor = false;
+            this.Addtocart.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // panel4
+            // 
+            this.panel4.Controls.Add(this.roommoney);
+            this.panel4.Controls.Add(this.room);
+            this.panel4.Controls.Add(this.roomtype);
+            this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel4.Location = new System.Drawing.Point(198, 220);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(382, 55);
+            this.panel4.TabIndex = 9;
+            // 
+            // roommoney
+            // 
+            this.roommoney.AutoSize = true;
+            this.roommoney.ForeColor = System.Drawing.Color.Red;
+            this.roommoney.Location = new System.Drawing.Point(225, 17);
+            this.roommoney.Name = "roommoney";
+            this.roommoney.Size = new System.Drawing.Size(22, 15);
+            this.roommoney.TabIndex = 2;
+            this.roommoney.Text = "     ";
+            // 
+            // room
+            // 
+            this.room.AutoSize = true;
+            this.room.ForeColor = System.Drawing.Color.Red;
+            this.room.Location = new System.Drawing.Point(225, 17);
+            this.room.Name = "room";
+            this.room.Size = new System.Drawing.Size(0, 15);
+            this.room.TabIndex = 1;
+            // 
+            // roomtype
+            // 
+            this.roomtype.FormattingEnabled = true;
+            this.roomtype.Items.AddRange(new object[] {
+            "Chọn loại phòng",
+            "SVVN - 3 beds - 950.000",
+            "SVVN - 4 beds - 850.000",
+            "SVVN - 6 beds - 700.000",
+            "SVQT - 3 beds - 2.300.000"});
+            this.roomtype.Location = new System.Drawing.Point(0, 14);
+            this.roomtype.Name = "roomtype";
+            this.roomtype.Size = new System.Drawing.Size(200, 23);
+            this.roomtype.TabIndex = 0;
+            this.roomtype.Text = "Chọn loại phòng";
+            this.roomtype.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            // 
+            // anothermoney
+            // 
+            this.anothermoney.Location = new System.Drawing.Point(198, 282);
+            this.anothermoney.Name = "anothermoney";
+            this.anothermoney.Size = new System.Drawing.Size(200, 23);
+            this.anothermoney.TabIndex = 8;
+            // 
             // tableLayoutPanel5
             // 
             this.tableLayoutPanel5.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Single;
@@ -324,7 +425,7 @@
             this.tableLayoutPanel5.Name = "tableLayoutPanel5";
             this.tableLayoutPanel5.RowCount = 1;
             this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel5.Size = new System.Drawing.Size(584, 89);
+            this.tableLayoutPanel5.Size = new System.Drawing.Size(584, 120);
             this.tableLayoutPanel5.TabIndex = 8;
             // 
             // tableLayoutPanel6
@@ -333,40 +434,102 @@
             this.tableLayoutPanel6.ColumnCount = 1;
             this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 29.18216F));
             this.tableLayoutPanel6.Controls.Add(this.label10, 0, 2);
-            this.tableLayoutPanel6.Controls.Add(this.listBox6, 0, 1);
+            this.tableLayoutPanel6.Controls.Add(this.panel2, 0, 1);
+            this.tableLayoutPanel6.Controls.Add(this.panel5, 0, 3);
             this.tableLayoutPanel6.Location = new System.Drawing.Point(605, 141);
             this.tableLayoutPanel6.Name = "tableLayoutPanel6";
             this.tableLayoutPanel6.RowCount = 4;
             this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 87F));
-            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 32F));
-            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 15F));
-            this.tableLayoutPanel6.Size = new System.Drawing.Size(550, 522);
+            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 82F));
+            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 33F));
+            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 50F));
+            this.tableLayoutPanel6.Size = new System.Drawing.Size(550, 553);
             this.tableLayoutPanel6.TabIndex = 9;
             this.tableLayoutPanel6.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel6_Paint);
             // 
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(4, 473);
+            this.label10.Location = new System.Drawing.Point(4, 468);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(107, 15);
             this.label10.TabIndex = 1;
             this.label10.Text = "Tổng tiền yêu cầu :";
+            this.label10.Visible = false;
             // 
-            // listBox6
+            // panel2
             // 
-            this.listBox6.FormattingEnabled = true;
-            this.listBox6.ItemHeight = 15;
-            this.listBox6.Items.AddRange(new object[] {
-            "* Phí học lại:",
-            "* Phí ký túc xá:",
-            "* Phí phụ trội KTX:",
-            "* Phí khác:"});
-            this.listBox6.Location = new System.Drawing.Point(4, 388);
-            this.listBox6.Name = "listBox6";
-            this.listBox6.Size = new System.Drawing.Size(120, 79);
-            this.listBox6.TabIndex = 2;
+            this.panel2.Controls.Add(this.label24);
+            this.panel2.Controls.Add(this.label23);
+            this.panel2.Controls.Add(this.label22);
+            this.panel2.Controls.Add(this.label21);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel2.Location = new System.Drawing.Point(4, 388);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(542, 76);
+            this.panel2.TabIndex = 3;
+            // 
+            // label24
+            // 
+            this.label24.AutoSize = true;
+            this.label24.Location = new System.Drawing.Point(5, 51);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(63, 15);
+            this.label24.TabIndex = 3;
+            this.label24.Text = "* Phí khác:";
+            this.label24.Visible = false;
+            // 
+            // label23
+            // 
+            this.label23.AutoSize = true;
+            this.label23.Location = new System.Drawing.Point(5, 35);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(103, 15);
+            this.label23.TabIndex = 2;
+            this.label23.Text = "* Phí phụ trội KTX:";
+            this.label23.Visible = false;
+            // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.Location = new System.Drawing.Point(5, 19);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(85, 15);
+            this.label22.TabIndex = 1;
+            this.label22.Text = "* Phí ký túc xá:";
+            this.label22.Visible = false;
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.Location = new System.Drawing.Point(5, 3);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(73, 15);
+            this.label21.TabIndex = 0;
+            this.label21.Text = "* Phí học lại:";
+            this.label21.Visible = false;
+            // 
+            // panel5
+            // 
+            this.panel5.Controls.Add(this.submit);
+            this.panel5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel5.Location = new System.Drawing.Point(4, 505);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(542, 44);
+            this.panel5.TabIndex = 4;
+            // 
+            // submit
+            // 
+            this.submit.BackColor = System.Drawing.Color.Red;
+            this.submit.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.submit.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.submit.Location = new System.Drawing.Point(6, 6);
+            this.submit.Name = "submit";
+            this.submit.Size = new System.Drawing.Size(108, 31);
+            this.submit.TabIndex = 0;
+            this.submit.Text = "Submit Order";
+            this.submit.UseVisualStyleBackColor = false;
+            this.submit.Visible = false;
             // 
             // label9
             // 
@@ -472,6 +635,49 @@
             this.linkLabel5.TabStop = true;
             this.linkLabel5.Text = "books24x7";
             // 
+            // panel6
+            // 
+            this.panel6.Controls.Add(this.agianmoney);
+            this.panel6.Controls.Add(this.checkedListBox1);
+            this.panel6.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel6.Location = new System.Drawing.Point(198, 4);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(382, 209);
+            this.panel6.TabIndex = 10;
+            // 
+            // agianmoney
+            // 
+            this.agianmoney.AutoSize = true;
+            this.agianmoney.ForeColor = System.Drawing.Color.Red;
+            this.agianmoney.Location = new System.Drawing.Point(11, 181);
+            this.agianmoney.Name = "agianmoney";
+            this.agianmoney.Size = new System.Drawing.Size(19, 15);
+            this.agianmoney.TabIndex = 8;
+            this.agianmoney.Text = "    ";
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Location = new System.Drawing.Point(928, 2);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(10, 15);
+            this.label16.TabIndex = 6;
+            this.label16.Text = "|";
+            // 
+            // acc
+            // 
+            this.acc.AutoSize = true;
+            this.acc.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.acc.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.acc.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.acc.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.acc.Location = new System.Drawing.Point(852, 3);
+            this.acc.Name = "acc";
+            this.acc.Size = new System.Drawing.Size(13, 15);
+            this.acc.TabIndex = 7;
+            this.acc.Text = "  ";
+            this.acc.Visible = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -507,13 +713,21 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.tableLayoutPanel1.ResumeLayout(false);
-            this.tableLayoutPanel1.PerformLayout();
+            this.panel3.ResumeLayout(false);
+            this.panel3.PerformLayout();
             this.tableLayoutPanel3.ResumeLayout(false);
             this.tableLayoutPanel3.PerformLayout();
             this.tableLayoutPanel4.ResumeLayout(false);
             this.tableLayoutPanel4.PerformLayout();
+            this.panel4.ResumeLayout(false);
+            this.panel4.PerformLayout();
             this.tableLayoutPanel6.ResumeLayout(false);
             this.tableLayoutPanel6.PerformLayout();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
+            this.panel5.ResumeLayout(false);
+            this.panel6.ResumeLayout(false);
+            this.panel6.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -538,9 +752,8 @@
         private Label label8;
         private Label label7;
         private Label label6;
-        private Button button1;
+        private Button Addtocart;
         private Label label10;
-        private ListBox listBox6;
         private Label label9;
         private LinkLabel linkLabel1;
         private Label label11;
@@ -552,10 +765,28 @@
         private LinkLabel linkLabel4;
         private Label label15;
         private LinkLabel linkLabel5;
-        private Label label16;
+        private Label money;
         private Label label17;
         private Label label18;
         private Label label19;
         private Label label20;
+        private Panel panel2;
+        private Label label24;
+        private Label label23;
+        private Label label22;
+        private Label label21;
+        private Panel panel3;
+        private CheckedListBox checkedListBox1;
+        private TextBox anothermoney;
+        private Panel panel4;
+        private ComboBox roomtype;
+        private Panel panel5;
+        private Button submit;
+        private Label room;
+        private Label roommoney;
+        private Panel panel6;
+        private Label agianmoney;
+        private Label acc;
+        private Label label16;
     }
 }
